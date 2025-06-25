@@ -1836,22 +1836,7 @@ INSERT INTO Booking_Show (
 (533023, 'Bronze', 2),
 (533025, 'Gold', 3),
 (533027, 'Silver', 4),
-(533029, 'Bronze', 5),
-(533031, 'Gold', 1),
-(533033, 'Silver', 2),
-(533035, 'Bronze', 3),
-(533037, 'Gold', 4),
-(533039, 'Silver', 5),
-(533041, 'Bronze', 1),
-(533043, 'Gold', 2),
-(533045, 'Silver', 3),
-(533047, 'Bronze', 4),
-(533049, 'Gold', 5),
-(533051, 'Silver', 1),
-(533053, 'Bronze', 2),
-(533055, 'Gold', 3),
-(533057, 'Silver', 4),
-(533059, 'Bronze', 5);
+(533029, 'Bronze', 5);
 
 --22
 INSERT INTO Booking_Movie (
@@ -1871,19 +1856,4 @@ INSERT INTO Booking_Movie (
 (533024, 'C2', 'Bronze'),
 (533026, 'C3', 'Gold'),
 (533028, 'C4', 'Silver'),
-(533030, 'C5', 'Bronze'),
-(533032, 'D1', 'Gold'),
-(533034, 'D2', 'Silver'),
-(533036, 'D3', 'Bronze'),
-(533038, 'D4', 'Gold'),
-(533040, 'D5', 'Silver'),
-(533042, 'E1', 'Bronze'),
-(533044, 'E2', 'Gold'),
-(533046, 'E3', 'Silver'),
-(533048, 'E4', 'Bronze'),
-(533050, 'E5', 'Gold'),
-(533052, 'F1', 'Silver'),
-(533054, 'F2', 'Bronze'),
-(533056, 'F3', 'Gold'),
-(533058, 'F4', 'Silver'),
-(533060, 'F5', 'Bronze');
+(533030, 'C5', 'Bronze');
