@@ -177,7 +177,7 @@ CREATE TABLE Movie_Pricing (
     schedule_id INT,
     category VARCHAR(50),
     price DECIMAL(8,2) NOT NULL,
-    PRIMARY KEY (schedule_id, catagory),
+    PRIMARY KEY (schedule_id, category),
     FOREIGN KEY (schedule_id) REFERENCES Event_Schedule(schedule_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (category) REFERENCES Category(category)
