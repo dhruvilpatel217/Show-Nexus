@@ -200,6 +200,7 @@ CREATE TABLE Booking (
     payment_id INT NOT NULL,
     review TEXT,
     booking_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    booking_type VARCHAR(10) NOT NULL,
     FOREIGN KEY (account_id) REFERENCES Account(account_id)
         ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY (schedule_id) REFERENCES Event_Schedule(schedule_id)
