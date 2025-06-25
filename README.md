@@ -1,6 +1,6 @@
 # 🎬 Show Nexus: Event & Movie Booking Platform
 
-**Show Nexus** is a full-featured **event and movie ticket booking system** designed to handle the end-to-end workflow of ticket management, user referrals, pricing, scheduling, and reporting in a scalable and normalized relational database architecture (BCNF-compliant).
+**Show Nexus** is a full-featured **event and movie ticket booking management system** designed to handle the end-to-end workflow of ticket management, user referrals, pricing, scheduling, and reporting in a scalable and normalized relational database architecture (BCNF-compliant).
 
 ---
 
