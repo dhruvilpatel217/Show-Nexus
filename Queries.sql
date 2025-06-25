@@ -1,3 +1,5 @@
+set search_path to Show_Nexus;
+
 -- 1. Filter Events by Genre
 SELECT 
     E.event_name, 
