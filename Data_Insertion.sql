@@ -367,7 +367,7 @@ INSERT INTO Category (category) VALUES
 ('VIP');
 
 --13
-INSERT INTO Seat (room_id, seat_number, seat_row, category) VALUES,
+INSERT INTO Seat (room_id, seat_number, seat_row, category) VALUES
 (380001, 'A1', 1, 'Gold'),
 (380001, 'A2', 1, 'Gold'),
 (380001, 'A3', 1, 'Gold'),
