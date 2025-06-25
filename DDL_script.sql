@@ -98,8 +98,6 @@ CREATE TABLE Venue (
     venue_name VARCHAR(100) NOT NULL,
     pincode INT NOT NULL,
     FOREIGN KEY (pincode) REFERENCES Region(pincode)
-        ON DELETE RESTRICT ON UPDATE CASCADE,
-    FOREIGN KEY (owner_id) REFERENCES Account(account_id)
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
