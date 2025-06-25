@@ -225,3 +225,20 @@ JOIN Event_Schedule es ON e.event_id = es.event_id
 JOIN Booking b ON es.schedule_id = b.schedule_id
 GROUP BY e.event_genre
 ORDER BY total_bookings DESC;
+
+-- 21. Most Active Referrers
+SELECT 
+    a.username, 
+    COUNT(DISTINCT r.account_id) AS total_referred, 
+    COUNT(c.coupon_id) AS active_coupons
+FROM Account a
+LEFT JOIN Account r 
+    ON a.account_id = r.referred_by
+LEFT JOIN Coupon c 
+    ON a.account_id = c.account_id 
+   AND c.redeemed_at IS NULL 
+   AND c.validity >= CURRENT_DATE
+GROUP BY a.username
+HAVING COUNT(DISTINCT r.account_id) > 0
+ORDER BY total_referred DESC;
+
