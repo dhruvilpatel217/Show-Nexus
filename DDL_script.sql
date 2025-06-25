@@ -112,18 +112,18 @@ CREATE TABLE Room (
 );
 
 CREATE TABLE Category (
-    catagory VARCHAR(50) PRIMARY KEY
+    category VARCHAR(50) PRIMARY KEY
 );
 
 CREATE TABLE Seat (
     room_id INT,
     seat_number VARCHAR(10),
     seat_row INT,
-    catagory VARCHAR(50),
+    category VARCHAR(50),
     PRIMARY KEY (room_id, seat_number),
     FOREIGN KEY (room_id) REFERENCES Room(room_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (catagory) REFERENCES Category(catagory)
+    FOREIGN KEY (category) REFERENCES Category(category)
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
@@ -169,18 +169,18 @@ CREATE TABLE Show_Pricing (
     PRIMARY KEY (schedule_id, category),
     FOREIGN KEY (schedule_id) REFERENCES Event_Schedule(schedule_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (category) REFERENCES Category(catagory)
+    FOREIGN KEY (category) REFERENCES Category(category)
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE Movie_Pricing (
     schedule_id INT,
-    catagory VARCHAR(50),
+    category VARCHAR(50),
     price DECIMAL(8,2) NOT NULL,
     PRIMARY KEY (schedule_id, catagory),
     FOREIGN KEY (schedule_id) REFERENCES Event_Schedule(schedule_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (catagory) REFERENCES Category(catagory)
+    FOREIGN KEY (category) REFERENCES Category(category)
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
@@ -210,21 +210,21 @@ CREATE TABLE Booking (
 
 CREATE TABLE Booking_Show (
     booking_id INT PRIMARY KEY,
-    catagory VARCHAR(50) NOT NULL,
+    category VARCHAR(50) NOT NULL,
     seat_count INT NOT NULL,
     FOREIGN KEY (booking_id) REFERENCES Booking(booking_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (catagory) REFERENCES Category(catagory)
+    FOREIGN KEY (category) REFERENCES Category(category)
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 CREATE TABLE Booking_Movie (
     booking_id INT,
     seat_number VARCHAR(10) NOT NULL,
-    catagory VARCHAR(50) NOT NULL,
+    category VARCHAR(50) NOT NULL,
     PRIMARY KEY (booking_id, seat_number),
     FOREIGN KEY (booking_id) REFERENCES Booking(booking_id)
         ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (catagory) REFERENCES Category(catagory)
+    FOREIGN KEY (category) REFERENCES Category(category)
         ON DELETE RESTRICT ON UPDATE CASCADE
 );
