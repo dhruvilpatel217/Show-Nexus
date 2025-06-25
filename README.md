@@ -64,13 +64,7 @@
 - 📆 **Days with Peak Event Schedules**
 - 🙌 **Most Active Referrers**
 
-See `Queries.sql` for the full list (20 powerful insights).
-
----
-
-## 📈 Example Use Case
-
-> A user referred 3 friends and earned a ₹50 coupon. They booked a comedy show in Mumbai, selecting 3 gold-category seats. The system automatically calculated pricing, applied the coupon, recorded the payment, and notified the user 1 hour before the event.
+See `Queries.sql` for the full list (21 powerful insights).
 
 ---
 
@@ -83,13 +77,16 @@ See `Queries.sql` for the full list (20 powerful insights).
 
 ---
 
-## 🧑‍💻 Maintainer
+## 👥 Project Contributors
 
-**Dhruvil Patel**  
-Sophomore @ DAIICT |  
-Batch Rep @ Programming Club  
-CodeChef 4★ (1941) | Codeforces Specialist  
-💼 [LinkedIn](https://www.linkedin.com/in/dhruvilpatel10) | 📫 dhruvilpatel217@gmail.com
+This project was developed by students from  **Dhirubhai Ambani University(DAU)**.
+
+| Name              |
+|-------------------|
+| Dhruvil Patel     |
+| Tarang Hirapara   |
+| Prayag Kalriya    |
+| Chirayu Dodiya    |
 
 ---
 
