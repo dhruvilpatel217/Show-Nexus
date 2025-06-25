@@ -1,3 +1,4 @@
+set search_path to Show_Nexus;
 --1
 INSERT INTO Account (
     account_id, username, password, email, mobile_number, dateofbirth, gender,
