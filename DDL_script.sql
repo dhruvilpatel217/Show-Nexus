@@ -1,4 +1,6 @@
--- DDL SCRIPT FOR EVENT BOOKING SYSTEM (BCNF-Compliant)
+-- DDL SCRIPT FOR Show_Nexus (BCNF-Compliant)
+create schema Show_Nexus;
+set search_path to Show_Nexus;
 
 CREATE TABLE Account (
     account_id INT PRIMARY KEY,
